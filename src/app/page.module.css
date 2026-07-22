@@ -1,0 +1,590 @@
+/* Hero Section */
+.heroContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.badgeContainer {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--color-border);
+  padding: 6px 14px 6px 6px;
+  border-radius: 30px;
+  gap: 12px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.systemReadyBadge {
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(116, 184, 22, 0.2);
+}
+
+.badgeText {
+  color: var(--color-text);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.heroContent h1 {
+  font-size: 3.8rem;
+  font-weight: 850;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, var(--color-text), #3f4e2c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.heroContent h1 span {
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: var(--color-primary);
+}
+
+.heroContent p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  color: var(--color-text-muted);
+}
+
+.heroActions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.heroImageContainer {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 680px;
+}
+
+.heroImageWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.35);
+  transform-origin: center;
+  mix-blend-mode: multiply;
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply !important;
+}
+
+/* Sections General */
+.section {
+  padding: 6rem 2rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.sectionHeader p {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}
+
+/* Grid Seção Diferenciais */
+.diferenciaisGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.diferencialCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  height: 100%;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(163, 230, 53, 0.1);
+  border: 1px solid rgba(163, 230, 53, 0.2);
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.diferencialCard h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: var(--color-text);
+}
+
+.diferencialCard p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Grid Seção Depoimentos */
+.depoimentosHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.depoimentosHeaderLeft {
+  max-width: 600px;
+}
+
+.depoimentosHeaderLeft h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.ratingContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ratingValue {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--color-text);
+}
+
+.starsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.starsRow {
+  display: flex;
+  gap: 2px;
+  color: var(--color-primary);
+}
+
+.ratingMeta {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.depoimentosGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.depoimentoCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.depoimentoUser {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(163, 230, 53, 0.2) 0%, rgba(31, 74, 66, 0.4) 100%);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-weight: 700;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.userTime {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.googleIconWrapper {
+  margin-left: auto;
+  opacity: 0.3;
+}
+
+.depoimentoText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* FAQ Layout */
+.faqGrid {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 5rem;
+}
+
+.faqInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.faqInfo h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.faqInfo p {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.duvidasCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.duvidasCard h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.duvidasCard p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.duvidasCard a {
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .heroContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+    padding: 3.5rem 1.5rem;
+  }
+
+  .heroContent {
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroContent h1 {
+    font-size: 3rem;
+  }
+
+  .heroActions {
+    justify-content: center;
+  }
+
+  .diferenciaisGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .depoimentosGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faqGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .faqInfo {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContainer {
+    position: relative;
+    min-height: 500px;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.4) 100%);
+  }
+
+  .heroImageContainer {
+    position: absolute !important;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.35;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroImageWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.85) !important;
+  }
+
+  .heroContent {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .heroContent h1 {
+    font-size: 2.4rem;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .heroContent p {
+    font-size: 1.05rem;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
+  }
+
+  .diferenciaisGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .depoimentosGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .depoimentosHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section {
+    padding: 4rem 1.5rem;
+  }
+}
+
+/* Como Funciona Grid */
+.howItWorksGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.howItWorksStep {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+}
+
+.stepNumber {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  background: rgba(163, 230, 53, 0.08);
+  border: 1px solid rgba(163, 230, 53, 0.2);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.howItWorksStep h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.howItWorksStep p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Tipos de Reparo Grid */
+.repairsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.repairCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.repairCard h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.repairCard p {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Final CTA Section */
+.finalCtaContainer {
+  background: radial-gradient(circle at 80% 20%, rgba(116, 184, 22, 0.1) 0%, rgba(240, 244, 230, 0.6) 100%);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 80px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.finalCtaContainer h2 {
+  font-size: 3rem;
+  font-weight: 850;
+  letter-spacing: -1.5px;
+  max-width: 800px;
+  margin: 0;
+  background: linear-gradient(to right, var(--color-text), #3f4e2c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+}
+
+.finalCtaContainer p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+/* Responsive updates for new grids */
+@media (max-width: 1024px) {
+  .howItWorksGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .repairsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .finalCtaContainer h2 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .repairsGrid {
+    grid-template-columns: 1fr;
+  }
+  .finalCtaContainer {
+    padding: 60px 24px;
+  }
+  .finalCtaContainer h2 {
+    font-size: 2.1rem;
+  }
+}
