@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# iMaster — Plataforma de Assistência Técnica
 
-## Getting Started
+Aplicação web desenvolvida para uma assistência técnica especializada em dispositivos móveis, com foco na apresentação de serviços, consulta de preços e facilitação do contato entre clientes e técnicos.
 
-First, run the development server:
+## Visão geral
+
+O sistema permite que clientes consultem opções de reparo de smartphones de acordo com a fabricante e o modelo do dispositivo, visualizando os serviços disponíveis e seus respectivos valores.
+
+A plataforma foi desenvolvida para centralizar informações comerciais e simplificar o processo de solicitação de orçamento.
+
+## Funcionalidades
+
+- Consulta dinâmica de fabricantes e modelos de smartphones.
+- Pesquisa de serviços de reparo e respectivos preços.
+- Apresentação de categorias de manutenção e assistência técnica.
+- Integração com WhatsApp para solicitação de orçamentos.
+- Interface responsiva para diferentes dispositivos.
+- Seções institucionais, diferenciais e perguntas frequentes.
+- Persistência e consulta de dados utilizando banco de dados relacional.
+
+## Tecnologias utilizadas
+
+| Tecnologia | Aplicação |
+|---|---|
+| Next.js 16 | Framework web e renderização no servidor |
+| React 19 | Construção da interface |
+| TypeScript | Tipagem estática |
+| Prisma ORM | Mapeamento e acesso aos dados |
+| PostgreSQL | Banco de dados relacional |
+| Node.js | Ambiente de execução |
+| bcryptjs | Recursos de hash de senhas |
+| JSON Web Token | Autenticação baseada em tokens |
+
+## Arquitetura
+
+A aplicação utiliza a arquitetura do Next.js com separação entre componentes de interface, páginas e módulos responsáveis pelo acesso aos dados.
+
+O Prisma é utilizado como camada de comunicação com o PostgreSQL, permitindo consultas estruturadas e gerenciamento das entidades da aplicação.
+
+## Executando o projeto
+
+### Pré-requisitos
+
+- Node.js
+- npm
+- PostgreSQL
+
+### Instalação
+
+```bash
+git clone https://github.com/IgorVinicin/Site_iMaster.git
+
+cd Site_iMaster
+
+npm install
+```
+
+Configure as variáveis de ambiente necessárias para a conexão com o banco de dados e os serviços da aplicação.
+
+Crie o arquivo `.env` conforme a configuração do Prisma e do projeto.
+
+### Banco de dados
+
+Execute as migrações do Prisma conforme a configuração existente:
+
+```bash
+npx prisma migrate deploy
+```
+
+### Ambiente de desenvolvimento
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação estará disponível em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Build de produção
 
-## Learn More
+```bash
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Objetivo técnico
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O projeto foi desenvolvido com o objetivo de aplicar conceitos de desenvolvimento web moderno, integração com banco de dados relacional, renderização no servidor e organização de aplicações utilizando TypeScript e Next.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Autor
 
-## Deploy on Vercel
+**Igor Vinicius**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[GitHub](https://github.com/IgorVinicin)
